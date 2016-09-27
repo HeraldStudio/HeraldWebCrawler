@@ -9,8 +9,7 @@ import os
 
 def getLogger(name):
 	handlers = {
-		logging.INFO : "/var/log/%s/info.log" % name,
-		logging.ERROR : "/var/log/%s/error.log" % name
+		logging.ERROR : "%s_error.log" % name
 	}
 	# logging format
 	formater = logging.Formatter('%(asctime)-4s %(message)s')
